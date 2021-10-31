@@ -1,8 +1,19 @@
 @import './index.scss';
 
 .App {
+  display: inline-grid;
+  grid-template-columns: 25% 75%;
+  width: 1200px;
+
   .card, .profile {
     background-color: $dark-blue;
     border-radius: .5rem;
+    margin: 1rem;
+  }
+
+  .tracker {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
   }
 }

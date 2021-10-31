@@ -94,6 +94,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [deploy react app with gh-pages](https://github.com/gitname/react-gh-pages)
 - [add scss to react app](https://medium.com/officialrajdeepsingh/how-to-add-scss-sass-in-react-js-6615b6e77e56) (replace node-sass by sass as it is deprecated)
+- [CSS grid reminder with css-ttricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
