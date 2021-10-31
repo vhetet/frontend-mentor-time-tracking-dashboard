@@ -1,0 +1,8 @@
+@import './index.scss';
+
+.App {
+  .card, .profile {
+    background-color: $dark-blue;
+    border-radius: .5rem;
+  }
+}
