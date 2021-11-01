@@ -124,18 +124,18 @@ function App() {
       </div>
       <div className="tracker">
         {data.map((c) => (
-          <div className="card" key={c.title}>
-            <div className="title">
-              <h4>{c.title}</h4>
-              <span className="options">...</span>
-            </div>
-            <div className="info">
-              <span className="current">
-                {c.timeframes["daily"].current}hrs
-              </span>
-              <span className="previous">
-                Last Day - {c.timeframes["daily"].previous}
-              </span>
+          <div key={c.title} className={`card ${c.title.toLocaleLowerCase().replace(' ', '-')}`}>
+            <div className="card-content">
+              <div className="title">
+                <h4>{c.title}</h4>
+                <span className="options">...</span>
+              </div>
+              <div className="info">
+                <h3 className="current">{c.timeframes["daily"].current}hrs</h3>
+                <span className="previous">
+                  Last Day - {c.timeframes["daily"].previous}
+                </span>
+              </div>
             </div>
           </div>
         ))}
