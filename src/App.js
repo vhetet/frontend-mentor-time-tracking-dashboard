@@ -1,4 +1,5 @@
 import "./App.scss";
+import profilePicture from './assets/images/image-jeremy.png'
 
 function App() {
   const data = [
@@ -110,10 +111,10 @@ function App() {
     <div className="App">
       <div className="profile">
         <div className="description">
-          <img src="" alt="" className="icon" />
+          <img src={profilePicture} alt="jeremy profile" className="icon" />
           <div>
             <span>Report for</span>
-            <span className="name">Jeremy Robson</span>
+            <h1>Jeremy Robson</h1>
           </div>
         </div>
         <div className="timeframe-selector">
