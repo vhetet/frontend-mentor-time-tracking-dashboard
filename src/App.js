@@ -119,7 +119,7 @@ function App() {
         </div>
         <div className="timeframe-selector">
           {Object.keys(data[0].timeframes).map((t) => (
-            <button key={t}>{t}</button>
+            <button key={t} style={{textTransform: 'capitalize'}}>{t}</button>
           ))}
         </div>
       </div>
