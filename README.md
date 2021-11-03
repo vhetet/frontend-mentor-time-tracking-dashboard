@@ -42,55 +42,27 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github repo](https://github.com/vhetet/frontend-mentor-time-tracking-dashboard)
+- Live Site URL to: [Github page](https://vhetet.github.io/frontend-mentor-time-tracking-dashboard/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS var + nesting
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Some ad blocker extension will block images when the name contain some words. For example ad block does not like icon-social.svg.
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+* Some ad blocker extension will block images when the name contain some words. For example ad block does not like icon-social.svg.
+* Learned more about CSS grid. I was seeing this weird behavior where the size of the card in the crid would change when the content width changed even though there was enough space in the card. I updated the grid template to use `1fr` instead of `auto` and it fixed the issue
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+* I need to figure out how to make the design more responsive. Right now I have a fixed size for desktop and mobile only start once the screen is less wide than 500px. I need to find the right balance.
 
 ### Useful resources
 
@@ -98,9 +70,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [add scss to react app](https://medium.com/officialrajdeepsingh/how-to-add-scss-sass-in-react-js-6615b6e77e56) (replace node-sass by sass as it is deprecated)
 - [CSS grid reminder with css-ttricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [CSS grid exercise - grid garden](https://codepip.com/games/grid-garden/)
-
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
