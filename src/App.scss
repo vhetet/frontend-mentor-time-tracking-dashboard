@@ -2,9 +2,9 @@
 
 .App {
   display: inline-grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 1fr 3fr;
   width: 56.25rem;
-  column-gap: 1rem;
+  column-gap: 1.5rem;
   font-weight: 500;
 
   .profile {
@@ -64,8 +64,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
 
     .card {
       border-radius: 0.5rem;
