@@ -1,5 +1,6 @@
 import "./App.scss";
-import profilePicture from './assets/images/image-jeremy.png'
+import { useState } from "react";
+import profilePicture from "./assets/images/image-jeremy.png";
 
 function App() {
   const data = [
@@ -107,6 +108,14 @@ function App() {
     },
   ];
 
+  const timeframeText = {
+    daily: 'day',
+    weekly: 'week',
+    monthly: 'month'
+  }
+
+  const [timeframe, setTimeframe] = useState("daily");
+
   return (
     <div className="App">
       <div className="profile">
@@ -119,22 +128,27 @@ function App() {
         </div>
         <div className="timeframe-selector">
           {Object.keys(data[0].timeframes).map((t) => (
-            <button key={t} style={{textTransform: 'capitalize'}}>{t}</button>
+            <button key={t} style={{ textTransform: "capitalize" }} onClick={() => setTimeframe(t)} className={t === timeframe ? 'active' : null}>
+              {t}
+            </button>
           ))}
         </div>
       </div>
       <div className="tracker">
         {data.map((c) => (
-          <div key={c.title} className={`card ${c.title.toLocaleLowerCase().replace(' ', '-')}`}>
+          <div
+            key={c.title}
+            className={`card ${c.title.toLocaleLowerCase().replace(" ", "-")}`}
+          >
             <div className="card-content">
               <div className="title">
                 <h4>{c.title}</h4>
                 <span className="options">...</span>
               </div>
               <div className="info">
-                <h3 className="current">{c.timeframes["daily"].current}hrs</h3>
+                <h3 className="current">{c.timeframes[timeframe].current}hrs</h3>
                 <span className="previous">
-                  Last Day - {c.timeframes["daily"].previous}
+                  Last {timeframeText[timeframe]} - {c.timeframes[timeframe].previous}
                 </span>
               </div>
             </div>

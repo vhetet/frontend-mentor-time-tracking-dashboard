@@ -41,8 +41,12 @@
       button {
         background-color: unset;
         font-weight: 1.125rem;
-        color: white;
+        color: $pale-blue;
         border: 0;
+
+        &.active {
+          color: white;
+        }
       }
     }
   }
