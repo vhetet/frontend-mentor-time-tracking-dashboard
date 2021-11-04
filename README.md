@@ -1,9 +1,3 @@
-
-# TODO
-
-* mobile design
-* adjust design for small tablet (500px to 900px)
-
 # Frontend Mentor - Time tracking dashboard solution
 
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -20,7 +14,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Available scripts](#available-scripts)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -36,15 +30,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop
+![desktop](./src/assets/screenshots/time-tracking-daskboard-desktop.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+#### Mobile
+![mobile](./src/assets/screenshots/time-tracking-daskboard-mobile.png)
 
 ### Links
 
@@ -65,10 +55,12 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 * Some ad blocker extension will block images when the name contain some words. For example ad block does not like icon-social.svg.
 * Learned more about CSS grid. I was seeing this weird behavior where the size of the card in the crid would change when the content width changed even though there was enough space in the card. I updated the grid template to use `1fr` instead of `auto` and it fixed the issue
+* how to make the UI scalable based on the font size. So, I knew how REM worked but I never did the cinfig to make the font size change based on the view port. 
 
 ### Continued development
 
 * I need to figure out how to make the design more responsive. Right now I have a fixed size for desktop and mobile only start once the screen is less wide than 500px. I need to find the right balance.
+* I need to figure out why the margin-bottom is ignored if there is no space at the bottom of the screen but the margin-top isn't. I would also be nice if I could figure out why the padding on the mobile div wrapper does not work vertically. I don't get how to make the container scrollable and force apadding at the top and bottom without adding it to the children.
 
 ### Useful resources
 
@@ -76,6 +68,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [add scss to react app](https://medium.com/officialrajdeepsingh/how-to-add-scss-sass-in-react-js-6615b6e77e56) (replace node-sass by sass as it is deprecated)
 - [CSS grid reminder with css-ttricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [CSS grid exercise - grid garden](https://codepip.com/games/grid-garden/)
+- [Make font size scale with the viewport](https://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container)
 
 ## Author
 
