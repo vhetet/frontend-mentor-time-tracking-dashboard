@@ -31,3 +31,13 @@ body {
   font-family: rubik;
   src: url("./assets/fonts/Rubik-VariableFont_wght.ttf");
 }
+
+html {
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 1em;
+  }
+}
